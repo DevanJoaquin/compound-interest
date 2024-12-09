@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+img {
+  height: 75px;
+  width: 70px;
+}
+
+article {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px auto 30px;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: gray;
+  align-items: center;
+}
+
+header,
+body {
+  font-family: "Oswald", sans-serif;
+  font-style: bold;
+}
+
+header {
+  font-size: 40px;
+  padding: 2px;
+  color: black;
+  text-shadow: -2px 3px 1px lightgray;
+  transition: scale 2s;
+}
+
+header:hover {
+  scale: 1.5;
+}
+
+footer {
+  padding: 5px;
+}
+
+form {
+  display: grid;
+  grid-template: auto auto auto auto / 5em 160px;
+  gap: 4px;
+  margin: 0 auto;
+  width: 220;
+}
+
+main {
+  padding: 20px 10px 10px 10px;
+  background-image: linear-gradient(lightblue, white);
+}
+
+.button input {
+  font-size: 20pt;
+  background-color: green;
+  color: white;
+}
+
+.button input:hover {
+  background-color: #abe6c0;
+  color: #000000;
+}
+
+.link:hover {
+  transform: scale(-1.1, 1);
+}

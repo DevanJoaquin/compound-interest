@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <header>
+        <div class="image"><img src="money1.png"></div>
+        <div>Compound Interest Calculator</div>
+        <div class="image"><img src="money1.png"></div>
+      </header>
+      <main>
+        <form>
+          <div>Principal</div>
+          <input type="number" id="principal" placeholder="---"/>
+          <div>Period</div>
+          <select id="period">
+            <option value=0>---</option>
+            <option value=1>Annually</option>
+            <option value=2>Semi-Annually</option>
+            <option value=4>Quarterly</option>
+            <option value=12>Monthly</option>
+            <option value=365>Daily</option>
+          </select>
+          <div>APR</div>
+          <input type="range" id="apr" min="0.25" max="50" step="0.25" value="0.25"></input>
+          <div>Years</div>
+          <input type="number" id="years" placeholder="---"/>
+        </form>
+        <p><span>Interest is <output id="accumulated" />---</span>%</p>
+        <div class="button"><input type="submit" id="calculate" value = "Calculate Compound Interest"></div>
+        <div><p>Total is: $<output id="totalOutput" />---</p></div>
+      </main>
+      <footer>
+        <div>©️ 2024</div>
+        <div class="link"><a href="https://codesandbox.io/p/sandbox/compound-interest-y4rrql">Code</a></div>
+      </footer>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Compound Interest Calculator",
+  "version": "1.0.0",
+  "description": "A simple compound interest calculator",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Devan Joaquin Abiva",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}
